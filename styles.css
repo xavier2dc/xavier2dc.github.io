@@ -21,9 +21,7 @@ body {
 }
 
 .bottom {
-	margin: 0px;
-	padding-bottom: 10px;
-	border-top: 1px solid #000;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 #menu {
@@ -63,11 +61,15 @@ body {
 
 #overview {
 	margin-top: 30px;
-	border-bottom: 1px solid #e0e0e0;
 }
 
 #announcement {
-	color: red;
+	//color: red;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAyCAQAAACXbRHvAAAC7mlDQ1BEb3QgR2FpbiAyMCUAACjPY2BgnuDo4uTKJMDAUFBUUuQe5BgZERmlwH6egY2BmQEMEpOLCxwDAnxA7Lz8vFQGVMDIwPDtGohkYLisCzKLgTTAmgy0GEgfAGKjlNTiZCD9BYjTy0sKgOKMMUC2SFI2mF0AYmeHBDkD2S0MDEw8JakVIL0MzvkFlUWZ6RklCoaWlpYKjin5SakKwZXFJam5xQqeecn5RQX5RYklqSlAtVA7QIDXJb9EwT0xM0/ByECVgcoAFI4QFiJ8EGIIkFxaVAYPSgYGAQYFBgMGB4YAhkSGeoYFDEcZ3jCKM7owljKuYLzHJMYUxDSB6QKzMHMk80LmNyyWLB0st1j1WFtZ77FZsk1j+8Yezr6bQ4mji+MLZyLnBS5Hri3cmtwLeKR4pvIK8U7iE+abxi/Dv1hAR2CHoKvgFaFUoR/CvSIqIntFw0W/iE0SNxK/IlEhKSd5TCpfWlr6hEyZrLrsLbk+eRf5PwpbFQuV9JTeKq9VKVA1Uf2pdlC9SyNUU0nzg9YB7Uk6qbpWeoJ6r/SPGCwwrDWKMbY1kTdlNn1pdsF8p8USywlWdda5NnG2gXau9tYOxo46TmrOSi4KrvJuCu7KHuqeul4m3jY+7r7Bfgn++QH1gRODlgbvCrkY+jKcKUIu0ioqIroiZmbsnrgHCWyJuklhyQ0pa1JvpnNkWGRmZs3NvpjLnmefX1GwqfBdsXZJVumqsjcV+pUlVbtqGGu96qbWP2zUa6ppPtsq11bYfrRTuquo+3Sval9j/92JNpNmT/47NX7a4RkaM/tnfZ+TMPf0fPMFSxeJLG5d8m1Z5vJ7K0NWnV7jsnbfessN2zaZbN6y1WTb9h1WO/fvdt1zdl/Y/gcHcw79PNJ+TPz4ipPWp86dST776/yki9qXjl5JvPrv+pybNrfu3qm/p3z/xMO8x2JP9j/LfCHy8uDr/Lfy7y58aPpk+vnV1wXfw38K/Dr1p/Wf4///AA0ADzTumSiPAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVRIx7XXTytEURjH8e/kX9GVKLJSSimSUqKkSClRoiwUWSiLKRZCUaYoiprFqFmQhVKThMRiSpQUXgMbr8CCWDtqirjPec7Mac7ynvp07j3Pec7vRlJkxhFjfFDGM1GucB6RDHDCyK+nUZLZAWcM/3k+R8IVKOeJmpCZeeJuwAWDwtwSWy7AG4E4u8KGHwAx1vwAWGfVDqTpV1a5ybIN6OVa/VLbLNrqoM+h8uJmWy2F1MONSiRMcVlKuZtbldhhVgagizsF+GTh/xn5AaCTe3UV+0zLALQbokAhDpiSAWjjgSKFOGRCBqCVR0oUIsW4DECLWUWpQhyb/iUC0GSIQCFOGZUBaDREhUKcf/cxCYAGQ1TphAxAvSGqFWLABkCdIWqtwKsdgGLS5qjJ410DCk3xTuYOeL6Cy0eM+W3jJUN5KiTPUvY8TJ7H2bOheLY0z6aqt3XYZcbnYkma7JSfq83zcg14odLnepdDlmPA8I44eQ1ZTjFPDlmOQVMKWc5RN7wOsgjbYZWYddyHZvboyOWH4wssY4hWuvBI1gAAAABJRU5ErkJggg==');
+	background-color: #fffcd1;
+	background-repeat: no-repeat;
+	background-position: left 5px top 10px;
+	padding-left: 50px;
 }
 
 ol, ul {
@@ -83,6 +85,7 @@ h1 {
 
 h2 {
 	font-weight: 500;
+	margin: 30px 0 20px 0;
 }
 
 #name {
@@ -116,7 +119,7 @@ img {
 	margin: 10px 0 30px 0;
 }
 
-.icon, .dlicon {
+.icon {
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
@@ -124,16 +127,13 @@ img {
 	margin-left: 8px;
 }
 
+.icon2 {
+	margin-right: 5px;
+	margin-left: 8px;
+}
+
 .icon-first {
 	margin-left:0px;
-}
-
-.dlicon {
-	margin-left: auto;
-}
-
-.sep {
-	clear: left;
 }
 
 .badge {
@@ -174,19 +174,6 @@ img {
 	background-color: #ffc107;
 }
 
-.info-content {
-	margin-left: 75px;
-}
-
-.lastmod {
-	font-size: 12px;
-	font-style: italic;
-}
-
-.info-title {
-	float:left
-}
-
 .center {
 	display: block;
 	margin-left: auto;
@@ -206,4 +193,15 @@ img {
 pre {
 	display: inline;
 	margin: 0;
+}
+
+.column {
+  float: left;
+  padding: 0 2px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
