@@ -163,7 +163,7 @@ img {
 
 .badge-conf {
 	color: white;
-	background-color: #007bff;
+	background-color: #dc3545;
 }
 
 .badge-journal {
@@ -173,7 +173,12 @@ img {
 
 .badge-preprint {
 	color: white;
-	background-color: #6c757d;
+	background-color: #007bff;
+}
+
+.badge-thesis {
+    color: white;
+    background-color: #6c757d;
 }
 
 .badge-press {
