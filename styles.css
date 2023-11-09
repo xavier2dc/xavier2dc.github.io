@@ -3,11 +3,18 @@ html {
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Twemoji Country Flags';
+	unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+	src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
+}
+
 body {
-	font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: "Twemoji Country Flags", "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: 1rem;
 	line-height: 24px;
 	margin: 0;
+    padding-bottom: 35px;
 }
 
 .header {
@@ -74,6 +81,7 @@ body {
 
 ol, ul {
 	padding-bottom: .5em;
+    margin: 0;
 }
 
 h1 {
@@ -86,6 +94,10 @@ h1 {
 h2 {
 	font-weight: 500;
 	margin: 30px 0 20px 0;
+}
+
+h3 {
+	margin: 10px 0 5px 0;
 }
 
 #name {
