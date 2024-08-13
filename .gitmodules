@@ -1,0 +1,3 @@
+[submodule "truecrypt-binaries-analysis"]
+	path = truecrypt-binaries-analysis
+	url = https://github.com/xavier2dc/truecrypt-binaries-analysis
