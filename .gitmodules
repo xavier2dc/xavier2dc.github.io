@@ -1,3 +1,6 @@
 [submodule "truecrypt-binaries-analysis"]
 	path = truecrypt-binaries-analysis
 	url = https://github.com/xavier2dc/truecrypt-binaries-analysis
+[submodule "pwd-checkers"]
+	path = pwd-checkers
+	url = https://github.com/xavier2dc/pwd-checkers
