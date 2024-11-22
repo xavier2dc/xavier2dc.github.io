@@ -12,7 +12,7 @@ html {
 body {
 	font-family: "Twemoji Country Flags", "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: 1rem;
-	line-height: 24px;
+	line-height: 1.5em;
 	margin: 0;
     padding-bottom: 35px;
 }
@@ -54,7 +54,7 @@ body {
 	border-bottom: none;
 	color: black;
 	padding: .5em;
-	font-size: 14px;
+	font-size: 1em;
 }
 
 #menu a:hover {
@@ -62,8 +62,12 @@ body {
 }
 
 .content {
-	margin: 0px auto;
+	padding-inline: 1em;
 	max-width: 950px
+}
+
+#profile {
+	padding-inline: 1em;
 }
 
 #overview {
@@ -85,7 +89,8 @@ ol, ul {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3em;
+	line-height: 1em;
 	font-weight: 300;
 	margin: 0 0 16px;
 	padding: 0;
