@@ -14,7 +14,7 @@ body {
 	font-size: 1rem;
 	line-height: 1.5em;
 	margin: 0;
-    padding-bottom: 35px;
+	padding-bottom: 35px;
 }
 
 .header {
@@ -55,23 +55,28 @@ body {
 	color: black;
 	padding: .5em;
 	font-size: 1em;
+	background-color: #f9f9f9;
 }
 
 #menu a:hover {
-	background-color: white;
+	background-color: lightcoral;
 }
 
 .content {
 	padding-inline: 1em;
-	max-width: 950px
+	max-width: 950px;
+	margin: 0px auto;
 }
 
-#profile {
+.upper-content {
 	padding-inline: 1em;
+	max-width: 950px;
+	margin: 0px auto;
 }
 
 #overview {
 	margin-top: 30px;
+	min-height: 220px;
 }
 
 .announcement {
@@ -85,7 +90,7 @@ body {
 
 ol, ul {
 	padding-bottom: .5em;
-    margin: 0;
+	margin: 0;
 }
 
 h1 {
@@ -154,16 +159,16 @@ img {
 }
 
 .badge {
-  display: inline-block;
-  padding: .25em .4em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	display: inline-block;
+	padding: .25em .4em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .badge-conf {
@@ -182,8 +187,8 @@ img {
 }
 
 .badge-thesis {
-    color: white;
-    background-color: #6c757d;
+	color: white;
+	background-color: #6c757d;
 }
 
 .badge-press {
@@ -194,6 +199,21 @@ img {
 .badge-project {
 	color: #212529;
 	background-color: #ffc107;
+}
+
+.badge-coteach {
+	color: white;
+	background-color: #007bff;
+}
+
+.badge-coord {
+	color: white;
+	background-color: #28a745;
+}
+
+.badge-founder {
+	color: white;
+	background-color: #dc3545;
 }
 
 .center {
@@ -209,7 +229,6 @@ img {
 	margin: 8px 0 8px 15px;
 	padding: 3px;
 	font-family: monospace;
-	white-space: pre;
 }
 
 pre {
@@ -218,12 +237,12 @@ pre {
 }
 
 .column {
-  float: left;
-  padding: 0 2px;
+	float: left;
+	padding: 0 2px;
 }
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
