@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Xavier de Carné de Carnavalet</title>
+		<title>Xavier What? | Xavier de Carné de Carnavalet</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="header">
 			<div class="content">
 				<div id="profile">
-					<img src="polyu.png" width="250" height="75" alt="The Hong Kong Polytechnic University" id="logo">
 					<h1 id="name">Xavier de Carné de Carnavalet</h1>
-					<p><i>Lecturer</i><br><a href="https://www.comp.polyu.edu.hk/">Department of Computing</a>, <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University</a></p>
+					<p><i>Assistant Professor</i><br><a href="https://www.ru.nl/en">Radboud University</a></p>
 				</div>
 				<div id="menu">
 					<ul>
 						<li><a href="./">Home</a></li>
-            <li><a href="press.html">Press</a></li>
-						<li><a href="name.html"><i>Xavier what?</i></a></li>
+						<li><a href="research.html">Research</a></li>
 						<li><a href="students.html">Students</a></li>
 						<li><a href="teaching.html">Teaching</a></li>
+						<li><a href="name.html"><i>Xavier&nbsp;what?</i></a></li>
+						<li><a href="press.html">Press</a></li>
 						<li><a href="resources.html">Resources</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="content">
-			<div id="quote">
+			<div class="section">
 				<h2>Tutorial: How to use my name</h2>
-				My French name can cause certain troubles due to its length and non-conformance to <a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/" onclick="targer='_blank'">common beliefs about names</a>, so let me explain how to parse it and quote it when necessary.<br>
+				My French name can cause certain troubles due to its length and non-conformance to <a href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">common beliefs about names</a>, so let me explain how to parse it and quote it when necessary.<br>
 				<h3>Common use cases</h3>
 				In an email: <div class="highlight-dashed">Dear Dr. de Carnavalet...</div><br>
-				In a paper: <div class="highlight-dashed">Carnavalet <i>et al.</i> showed that...<br>as shown by Carnavalet <i>et al.</i>...</div><br>
+				In a paper: <div class="highlight-dashed">Carnavalet <i>et al.</i> showed that...<br>as shown by Carnavalet <i>et al.</i></div><br>
 				<h3>Summary</h3>
-				<div class="center"><img src="name_explained.png" width="586" height="152" alt="My name, explained"></div>
+				<div class="center"><img src="name_explained.png" class="wide" alt="My name, explained"></div>
 				<h3>Pronunciation (IPA)</h3>
 				<div class="center IPA">\ɡza.vje dø kaʁ.ne dø kaʁ.na.va.le\</div>
 				<h3>Explanations</h3>
@@ -50,62 +51,67 @@
 				<div class="highlight-dashed">de Carné</div>
 				and second/last part:
 				<div class="highlight-dashed">de Carnavalet</div>
-				These two tricky "de" are called particles (like van, von, etc.) and there are certain rules that apply when using such name in a sentence.<br>
+				These two tricky "de" are called particles (similar to van, von, etc.) and there are certain rules that apply when using such name in a sentence.<br>
 				There are two general rules you should be aware of:
 				<ul>
 					<li>Both "de" always need to be written in <b>lowercase</b> (or small caps if necessary). I am NOT <i>Robert De Niro</i>.</li>
-					<li>There is an accented letter in my name, "é". Copy and reuse this character or use &amp;eacute; in HTML, \'{e} in LaTeX, Ctrl+4 then E in MS Office, Alt+0233 in Windows, it is 0x9E in extended ASCII or 0xC3A9 in UTF-8.<br>
-					The uppercase version, "É", is &amp;Eacute; in HTML, \'{E} in LaTeX, Ctrl+4 then Shift+E in MS Office, Alt+0201 in Windows, it is 0xC9 in extended ASCII or 0xC389 in UTF-8.</li>
+					<li>The lowercase rule is different than the Dutch prefix "van" that can be capitalized in certain circumstances.</li>
+					<li>There is an accented letter in my name, "é". Copy and reuse this character or use &amp;eacute; in HTML, \'{e} in LaTeX, Alt+0233 in Windows, it is 0xE9 in Latin 1 or 0xC3A9 in UTF-8.<br>
+					The uppercase version, "É", is &amp;Eacute; in HTML, \'{E} in LaTeX, Alt+0201 in Windows, it is 0xC9 in Latin 1 or 0xC389 in UTF-8.</li>
 					<li><em>Simple text examples:</em>
-<div class="highlight-dashed">Xavier de Carné de Carnavalet is a researcher at ... University...
-<span style="font-variant: small-caps;">Author: Xavier de CARNÉ de CARNAVALET</span></div>
+						<div class="highlight-dashed">Xavier de Carné de Carnavalet is a researcher at ... University...</div>
+						<div class="highlight-dashed"><span style="font-variant: small-caps;">Author: Xavier de CARNÉ de CARNAVALET</span></div>
+					</li>
+					<li>Eventually, the last name "should" be alphabetically sorted under "C" and not "D" (ignoring the first "de"), although I'm often transfered at the end of a list because someone used case-sensitive sorting... so I'm happy under "D".</li>
+					<li><em>Simple listing examples:</em>
+						<div class="highlight-dashed">Carné de Carnavalet, Xavier de</div>
+						<div class="highlight-dashed">Carné de Carnavalet (de), Xavier</div>
+					</li>
+				</li>
+			</ul>
+			Below are the specific rules you may be searching for:
+			<ul>
+				<li>
+					<h4>Quoting the full name</h4>
+					No problem here, just use the full name.<br>
+					<ul>
+						<li><em>HTML example:</em>
+							<div class="highlight-dashed">&lt;html&gt;Xavier de Carn&amp;eacute; de Carnavalet is a researcher...&lt;/html&gt;</div>
 						</li>
-						<li>Eventually, the last name "should" be alphabetically sorted under "C" and not "D" (ignoring the first "de"), although I'm often transfered at the end of a list because someone used case-sensitive sorting... so I'm happy under "D".</li>
-					</li>
-				</ul>
-				Below are the specific rules you may be searching for:
-				<ul>
-					<li>
-						<h4>Quoting the full name</h4>
-						No problem here, just use the full name.<br>
-						<ul>
-							<li><em>HTML example:</em>
-								<div class="highlight-dashed">&lt;html&gt;Xavier de Carn&amp;eacute; de Carnavalet is a researcher...&lt;/html&gt;</div>
-							</li>
-							<li><em>BibTeX examples:</em>
-<div class="highlight-dashed">author = {Xavier de Carn\'{e} de Carnavalet}
-author = {de Carn\'{e} de Carnavalet, X. and ...}</div>
-							</li>
-							<li><em>BibTeX trick for some journals (when \cite outputs [Name] instead of [1]):</em>
-								<div class="highlight-dashed">author = {Carnavalet, Xavier de Carn\'{e} de and ...}</div>
-								Note: This will also sort the name in a correct alphabetic order (under "C" instead of "D")
-							</li>
-						</ul>
-					</li>
-					<li>
-						<h4>Quoting the last name only, including a title</h4>
-						When quoting the last name with a title (mister, Mr, etc.), just use the last name.<br>
-						<ul>
-							<li><em>Optional:</em> Just use the second part of the last name.</li>
-							<li><em>Examples:</em>
-<div class="highlight-dashed">Mr. de Carné de Carnavalet is a researcher at ... University...
-I met mister de Carnavalet at the conference...</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<h4>Quoting the last name only, without title</h4>
-						When quoting the last name alone, you drop the first "de".<br>
-						<ul>
-							<li><em>Optional:</em> Just use the second part of the last name.</li>
-							<li><em>Examples:</em>
-<div class="highlight-dashed">Carnavalet showed that password strength meters are generally not well-designed...
-The work of Carné de Carnavalet shows that...</div>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+						<li><em>BibTeX examples:</em>
+							<div class="highlight-dashed">author = {Xavier de Carn\'{e} de Carnavalet}</div>
+							<div class="highlight-dashed">author = {de Carn\'{e} de Carnavalet, X. and ...}</div>
+						</li>
+						<li><em>BibTeX trick for some journals (when \cite outputs [Name] instead of [1]):</em>
+							<div class="highlight-dashed">author = {Carnavalet, Xavier de Carn\'{e} de and ...}</div>
+							Note: This will also sort the name in a correct alphabetic order (under "C" instead of "D")
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h4>Quoting the last name only, including a title</h4>
+					When quoting the last name with a title (mister, Mr, etc.), just use the last name.<br>
+					<ul>
+						<li><em>Optional:</em> Just use the second part of the last name.</li>
+						<li><em>Examples:</em>
+							<div class="highlight-dashed">Mr. de Carné de Carnavalet is a researcher at ... University...</div>
+							<div class="highlight-dashed">I met mister de Carnavalet at the conference...</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h4>Quoting the last name only, without title</h4>
+					When quoting the last name alone, you drop the first "de".<br>
+					<ul>
+						<li><em>Optional:</em> Just use the second part of the last name.</li>
+						<li><em>Examples:</em>
+							<div class="highlight-dashed">Carnavalet showed that password strength meters are generally not well-designed...</div>
+							<div class="highlight-dashed">The work of Carné de Carnavalet shows that...</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
