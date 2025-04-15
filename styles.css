@@ -50,6 +50,10 @@ body {
 	margin: auto 5px;
 }
 
+li {
+	margin-bottom: 0.3em;
+}
+
 #menu a {
 	border-bottom: none;
 	color: black;
