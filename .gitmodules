@@ -4,3 +4,6 @@
 [submodule "pwd-checkers"]
 	path = pwd-checkers
 	url = https://github.com/xavier2dc/pwd-checkers
+[submodule "password-generator"]
+	path = password-generator
+	url = https://github.com/xavier2dc/password-generator
